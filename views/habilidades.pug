@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Habilidades de #{nombre}
+  body
+    h1 Habilidades de #{nombre}
+    ul
+      each habilidad in habilidades
+        li= habilidad
+    a(href=`/Portafolio/${nombre}`) Volver al inicio
+    a(href=`/Portafolio/${nombre}/contactame`) Contactame

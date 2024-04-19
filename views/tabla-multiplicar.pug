@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Tabla de Multiplicar del #{numero}
+  body
+    h1 Tabla de Multiplicar del #{numero}
+    table
+      thead
+        tr
+          th Multiplicando
+          th Resultado
+      tbody
+        each item in multiplicacion
+          tr
+            td= item.multiplicando
+            td= item.resultado

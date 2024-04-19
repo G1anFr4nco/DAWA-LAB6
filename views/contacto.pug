@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Contacto de #{nombre}
+  body
+    h1 Contactame, #{nombre}!
+    form(action='/enviar', method='post')
+      label(for='nombre') Nombre:
+      input(type='text', id='nombre', name='nombre')
+      label(for='email') Email:
+      input(type='email', id='email', name='email')
+      label(for='mensaje') Mensaje:
+      textarea(id='mensaje', name='mensaje')
+      button(type='submit') Enviar
+    a(href=`/Portafolio/${nombre}`) Volver al inicio
+    a(href=`/Portafolio/${nombre}/habilidades`) Ver mis habilidades
